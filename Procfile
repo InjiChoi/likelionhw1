@@ -1,0 +1,1 @@
+web: gunicorn fifthproject.wsgi --log-file -
