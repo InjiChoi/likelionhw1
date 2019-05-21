@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+/*container*/
+.account-container {
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+
+.col {
+    background-color: white;
+    margin-bottom: 10px; /*padding 왜 먹지 않는가,,,*/
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}
+
+/*font*/
+h1.title {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: 'Jua', sans-serif;
+    font-size: 30pt;
+}
+
+h2 {
+    font-family: 'Jua', sans-serif;
+    font-size: 30pt;
+    text-align:center;
+}
+
+p {
+    font-family: 'Jua', sans-serif;
+    font-size: 12pt;
+}

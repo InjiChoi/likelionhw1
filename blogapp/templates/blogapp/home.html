@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>블로그 메인</title>
+        <link href="https://fonts.googleapis.com/css?family=Jua|Nanum+Myeongjo" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'blogapp/css/style.css' %}">
+    </head>
+    <body>
+        <h1 class="title">BLOG MAIN PAGE</h1>
+        <div class="container home-container">
+        {% for blog in blogs.all %}
+            <div class="col">
+            <br>
+            <h1>{{ blog.title }}</h1>
+            <p>{{ blog.pub_date }}</p>
+            <p>{{ blog.summary }} <a href="{% url 'detail' blog.id %}">...more</a></p><br>
+            </div>
+        {% endfor %}
+        <br>
+            <div class="text-center">
+                <button type="button" class="w3-button w3-gray w3-round-large photo-btn">
+                    <a href="{% url 'photo' %}">PHOTO</a></button>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+{% endblock %}

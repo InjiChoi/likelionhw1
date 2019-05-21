@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>블로그 메인</title>
+        <link href="https://fonts.googleapis.com/css?family=Jua|Nanum+Myeongjo" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'blogapp/css/style.css' %}">
+    </head>
+    <body>
+        <h1 class="title">DETAIL</h1>
+        <div class="container home-container">
+            <h2 class="title">자세한 본문 내용</h2>
+            <br>
+            <div class="col">
+                <br>
+            <h1>제목 : {{blog.title}}</h1>
+            <p>작성 날짜 : {{blog.pub_date}}</p>
+            <p>자세한 본문 : {{blog.body}}</p>
+            <br>
+            </div>
+        </div>
+    </body>
+</html>
